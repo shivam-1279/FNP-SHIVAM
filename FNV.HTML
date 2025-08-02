@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>FNV</title>
+    <link rel="stylesheet" type="text/css" href="FNV.CSS">
+
+</head>
+<body bgcolor="whitesmoke">
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img src="slider1.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img src="slider2.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img src="slider3.webp" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/ 7</div>
+            <img src="slider4.webp" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5/7</div>
+            <img src="slider5.webp" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6/7</div>
+            <img src="slider6.webp" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7/7</div>
+            <img src="slider7.webp" style="width:100%">
+          </div>
+        </div>
+        <br>
+        <div class="ax">
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+
+        </div>
+    </div>
+    
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+  
+   <div>     
+
+    <div class="a1" ></div>
+   <div class="a2" ></div>
+   <div class="a3" ><img src="Ferns-N-Petals-Logo-Startuptalky (1).jpg"></div>
+   <div class="a4" ><a href="FNV2.html"><img src="Childrens-Day_Squircle-5-11-24.webp"></a></div>
+   <div class="a5" ><a href="FNV3.html"><img src="anniversary_Squircle.webp"></a></div>
+   <div class="a6" ><img src="Birthday_Squircle.webp"></div>
+   <div class="a7" ><img src="Same-Day-Delivery_01-7-10-24.webp"></div>
+   <div class="a8" ><img src="fnp luxe icons 330X330 -Desktop.webp"></div>
+   <div class="a9" ><img src="wedding_Squircle-5-11-24.webp"></div>
+   <div class="a10" ><img src="New-Squircle-Icon_Best-of-Flowers (2).jpg"></div>
+   <div class="a11" ><img src="Squircle_Cake-04-11.webp"></div>
+   <div class="a12" ><img src="New-Squircle-Icon_Combos-11-11.jpg"></div>
+   <div class="a13" ></div>
+   <div class="a14" >Search flowers,cakes,gifts,etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128269;</div>
+   <div class="a15" ></div>
+   <div class="a16" >&#xe55f;Select delivery location ></div>
+   <div class="a17" ></div>
+   <div class="a18" ><B>SAME DAY DELIVERY</B></div>
+   <div class="a19" >Currency</div>
+   <div class="a20">INR &nbsp;&nbsp;&nbsp;&nbsp;
+
+|
+Franchise Enquiries
+|
+Corporate Gifts
+|
+More </div>
+<div class="a21" >&#x1F6D2;</div>
+<div class="a22" > &#8964;</div>
+<div class="a23" > &#8964;</div>
+<div class="a24" ></div>
+<div class="a25" ><B>GIFT<BR>FINDER</B></div>
+  <div class="a26" >Enter Pincode</div>
+  <div class="a27" >Birthday, Anniversary etc.</div>
+  <div class="a28" >Flowers, Cakes, Plants, etc.</div>
+  <div class="a29" >FIND GIFTS</div>
+  <div class="a30" >Celebrations Calendar</div>
+  <div class="a31" ><img src="Children's-Day-Calendar-Icon-Desktop-(1)-24-10-24.webp"></div>
+  <div class="a32" ><img src="International-Men's-Day-Calendar-Icon-Desktop-30-10-24.webp"></div>
+  <div class="a33" ><img src="Upcoming_Occasion_Thanksgiving_Desk.webp"></div>
+  <div class="a34" ><img src="Christmas_Calendar_Icon_Desktop-02-11.webp"></div>
+  <div class="a35" ><img src="Upcoming_Occasion_New_Year_Desk-5-11.webp"></div>
+  <div class="a36" >Children's Day</div>
+  <div class="a37" >Men's Day</div>
+  <div class="a38" >Thanksgiving Day</div>
+  <div class="a39" >Christmas</div>
+  <div class="a40" >New Year</div>
+  <div class="a41" >Celebrate Occasions with India's #1 Online Gift Store</div>
+  <div class="a42" >Thoughtfully curated 139,821 Gift Ideas. Get 2-Hour Delivery & Free Shipping in India.  </div>
+  <div class="a43" >Thoughtfully Curated Gifts</div>
+  <div class="a44" >VIEW ALL</div>
+  <div class="a45" ><img src="Exotic_Flowers_desk-05-11.webp"></div>
+  <div class="a46" ><img src="Air_purifying_desk-05-11.webp"></div>
+  <div class="a47" ><img src="Chocolates-2-11-24.webp"></div>
+  <div class="a48" ><img src="Personalised-2-11-24.webp"></div>
+  <div class="a49" ><img src="Ckaes-2-11-24.webp"></div>
+  <div class="a50" ><img src="Combos-2-11-24.webp"></div>
+  <div class="a51" ><img src="All-Gifts-2-11-24.webp"></div>
+  <div class="a52" >Turn every moment into a treat with<br> decadent chocalate</div>
+  <div class="a53" >Add Heart & Soul to your  gifts by<br>personalising them</div>
+  <div class="a54" >Let them  relish each moment with a<br>cake from you</div>
+  <div class="a55" >Double the surprise with thoughtfully<br> paired gift combos</div>
+  <div class="a56" >Never fall short of surprises with our <br>big Gift Range</div>
+  <div class="a57" ><p>Gifts In Trend</p>
+    <img src="personalised-anniversary-chocolate-photo-cake-half-kg_1.webp">
+    <img src="chocolate-truffle-cream-cake-half-kg_1.webp">
+    <img src="black-forest-cake-half-kg_1.webp">
+    <img src="roses-combo-harmony_1.webp">
+    <img src="heart-full-of-happiness-hamper_1.webp"></div>
+
+</div>
+<div class="a58" ><img src="cart_guest (1).png"></div>
+<div class="a59" >Personalised Anniversary chocalate ph...<br>
+  &#8377;999</div>
+<div class="a60" >chocalate truffle Cream cake half kg<br>
+  &#8377;599</div>
+<div class="a61" >black forest cake half kg<br>
+  &#8377;549</div>
+<div class="a62" >roses combo harmony<br>
+  &#8377;2375</div>
+<div class="a63" >heart full of happiness hamper<br>
+  &#8377;1235</div>
+
+
+ 
+<div class="slideshow-container2">
+        
+  <div class="mySlide fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="FNP.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlide fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="slice_strip_allinace.webp" style="width:100%">
+  </div>
+  
+  <div class="mySlide fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="cred.webp" style="width:100%">
+  </div>
+  <div class="mySlide fade">
+      <div class="numbertext">4/ 4</div>
+      <img src="Airtel.webp" style="width:100%">
+    </div>
+  </div>
+  <br>
+  <div class="az">
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+
+  </div>
+</div>
+
+  <script>
+  let slideIndex2 = 0;
+  slideshow();
+  
+  function slideshow() {
+    let i;
+    let slides = document.getElementsByClassName("mySlide");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+    setTimeout(slideshow, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+ 
+<div class="slideshow-container3">
+        
+  <div class="mySlidex fade">
+    <img src="Franchisee-Banner_Desktop_01_01 (1).webp" style="width:98.5%">
+  </div>
+  
+  <div class="mySlidex fade">
+    <img src="slice_strip_allinace.webp" style="width:98.5%">
+  </div>
+  </div>
+  <br>
+  <div class="av">
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+
+  </div>
+</div>
+<script>
+  let slideIndex3 = 0;
+  showSlides2();
+  
+  function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlidex");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex3++;
+    if (slideIndex3 > slides.length) {slideIndex3 = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex3-1].style.display = "block";  
+    dots[slideIndex3-1].className += " active";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+  }
+  </script>
+        <div class="v1"><p>Joyful Gifting Stories        </p>
+     <video src="vd1.mp4" controls="autoplay" ></video>
+
+    <video src="vd2.mp4" controls="autoplay" ></video>
+
+    
+      <video src="vd3.mp4" controls="auto" ></video>
+
+
+      <video src="vd4.mp4" controls="auto" ></video>
+
+      
+        <video src="vd5.mp4" controls="auto" ></video>
+
+    
+        <video src="vd6.mp4" controls="auto" ></video>
+
+      </div>
+      <div class="v2" ><p>The 2024 Birthday Collection      </p>
+        <img src="FLowers.webp">
+        <img src="Ckaes.webp">
+        <img src="COMBOS.webp">
+        <img src="Personalised.webp">
+        <img src="Experiences.webp"></div>
+        
+    </div>
+    <div class="v3">
+     <b>Flowers  
+       Cakes
+      Combos
+    Personalised
+    Experiences
+  </b> 
+    </div>
+    <div class="v4" >VIEW ALL</div>
+    <div class="v5" ><p>Same Day Delights    </p>
+      <img src="FNP_DESKTOP_BANNER_304x400_7-cakes-12-9-24.webp">
+      <img src="FNP_DESKTOP_BANNER_304x400-flowers-12-9-24.webp">
+      <img src="FNP_DESKTOP_BANNER_304x400_3-plants-12-9-24.webp">
+      <img src="FNP_DESKTOP_BANNER_304x400_4-sta-12-9-24.webp">
+      <img src="FNP_DESKTOP_BANNER_304x400_2-m-b-12-9-24.webp"></div>
+      
+  </div>
+  <div class="v6" >VIEW ALL</div>
+  <div class="v7">
+    <b>Cakes
+      Flowers  
+     Combos
+   Personalised
+   Experiences
+ </b> 
+ </div>
+ <div class="v8" ><p>Best Sellers</p>
+  <img src="chocolate-truffle-cream-cake-half-kg_1.webp">
+  <img src="chocolate-cream-cake-half-kg_1.webp">
+  <img src="black-forest-cake-half-kg_1.webp">
+  <img src="butterscotch-cake-half-kg_1.webp">
+  <img src="chocolate-caramel-fudge-cake-half-kg_1.webp"></div>
+  <div class="v9" >chocalate truffle Cream cake half kg<br>
+    &#8377;599</div>
+<div class="v10" >Chocolate Cream Cake half kg<br>
+  &#8377;599</div>
+<div class="v11" >black forest cake half kg<br>
+  &#8377;549</div>
+<div class="v12" >butterscotch cake half kg<br>
+  &#8377;599</div>
+<div class="v13" >chocolate caramel fudge cake hal kg<br>
+  &#8377;625</div>
+    <div class="v14" ><p>Pick Their Fav Flowers    </p>
+      <img src="Roses.webp">
+      <img src="Personalised (1).webp">
+      <img src="Carnations2.webp">
+      <img src="Orchids2.webp">      
+  </div><b>
+  <div class="v15" >VIEW ALL</div>
+  <div class="v16" >Roses</div>
+  <div class="v17" >Personalised flowers</div>
+  <div class="v18" >Carnations</div>
+  <div class="v19" >Orchids</div>
+</b>
+<div class="v20" ><p>Bakery-Fresh Cakes </p>
+  <img src="Cakes_Web_Chocolate2.webp">
+  <img src="Cakes_Web_Butterscotch2.webp">
+  <img src="Cakes_Web_Pineapple2.webp">
+  <img src="Cakes_Web_Butterscotch2.webp">      
+</div>
+<div class="v21" >VIEW ALL</div>
+<div class="v22" >Chocolate Cakes</div>
+<div class="v23" >Butterscotch Cakes</div>
+<div class="v24" >Pineapple Cakes</div>
+<div class="v25" >FLowers N Cakes</div>
+<div class="v26" ><p>For Every Relationship</p>
+  <img src="Men_Desk.jpg">  <img src="women_Desk.jpg">
+  <img src="kid-Desk-27-9-24.jpg">  <img src="friends.jpg">
+  <img src="girlfriend.jpg">  <img src="boyfriend.jpg">
+  <img src="wife2.jpg">  <img src="husband.jpg">
+  </div>
+<div class="v27"><b>Men women Kids Freinds girlfriend boyfriend Wife Husband</b></div>
+<div class="v28" ><p>Anniversary : Rekindle Love</p>
+  <img src="Anniversary_Web_Combos.webp">
+  <img src="Anniversary_Web_FlowersV2.webp">
+  <img src="Anniversary_Web_Cakes.webp">
+  <img src="Anniversary_Web_Home & Living V2.webp">
+  <img src="Anniversary_Web_Premium GiftsV2.webp"></div>
+  
+</div>
+<div class="v29" >VIEW ALL</div>
+<div class="v30"><b>combos Flowers cakes Home&Living Primium-Gift</b></div>
+<div class="v31" ><p>Gifts That Tell Stories</p>
+  <img src="Stationary2.webp">
+  <img src="Cushions2.webp">
+  <img src="Photoframe2.webp">
+  <img src="Mugs2.webp"> 
+        
+</div>
+<div class="v32" >VIEW ALL</div>
+<div class="v33" ><p>Plants For Every Vibe</p>
+  <img src="Plants-For-Every-Vibe_Web_Lucky-Bamboo.webp">
+  <img src="Plants-For-Every-Vibe_Web_Jade-Plants.webp ">
+  <img src="Plants-For-Every-Vibe_Web_Indoor-Plants.webp">
+  <img src="money-plant-surprise-for-brother_1.webp">
+</div>
+<div class="v34" >VIEW ALL</div>
+<div class="v35"><b>Stationary-Gifts cushion Photoframe Mugs</b></div>
+<div class="v36"><b>Lucky-Bamboo Jade-plants Indoor-plants Money-plants</b></div>
+<div class="v37" ><p>Gifts to Bring Them Closer</p>
+  <img src="USA.jpg">  <img src="Canada.jpg">
+  <img src="Australia.jpg">  <img src="UK.jpg">
+  <img src="UAE.jpg">  <img src="Germany (1).jpg">
+  <img src="Singapore.jpg">  <img src="Worldwide-mob.jpg">
+  </div>
+  <div class="v38"><b>USA  Canada   Australia   UK  UAE  Germany Singapore Worldwide</b></div>
+<ul>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Birthday</a>
+    <div class="dropdown-content">
+      <h4>MUST HAVE</h4>
+      <a href="#">Flowers</a>
+      <a href="#">Flowers N Cake</a>
+      <a href="#">Cakes</a>
+      <a href="#">Flowers N Chocolate</a>
+      <a href="#">Plants</a>
+      <a href="#">Combo</a>
+      <a href="#">Gifts Hampers</a>
+      <a href="#">Personalised Gifts</a>
+      <a href="#">Chocolate</a>
+      <a href="#">Greetings Card</a>
+    </div>
+    <div class="dropdown-content2">
+      <h4>PRIME PICKS</h4>
+      <a href="#">All Gifts</a>
+      <a href="#">Bestseller</a>
+      <a href="#">Zodiac Gifts</a>
+      <a href="#">Primium Gifts</a>
+      <a href="#">Unusual Gifts</a>
+      <a href="#">New arival</a>
+      <a href="#">Midnight Delivery</a>
+      <a href="#">Returned Gifts</a>
+      <a href="#">Luxe Birthday</a>
+    </div>  
+    <div class="dropdown-content3">
+      <h4>PERSONAL PICKS</h4>
+      <a href="#">Plant lover</a>
+      <a href="#">Wanderer</a>
+      <a href="#">Fodies</a>
+      <a href="#">Music Fan</a>
+    </div>  
+    <div class="dropdown-content4">
+      <h4>AGE PERFECT GIFTS</h4>
+      <a href="#">1st Birthday</a>
+      <a href="#">10th Birthday</a>
+      <a href="#">18th Birthday</a>
+      <a href="#">50th Birthday</a>
+    </div>  
+    <div class="dropdown-content5">
+      <h4>TREASURE TROVE</h4>
+      <a href="#">Spritual Gift</a>
+      <a href="#">Electronics</a>
+      <a href="#">Exotic flowers</a>
+      <a href="#">Expertential GIFTS</a>
+      <a href="#">Tony N Games</a>
+      <a href="#">Bellon Decor</a>
+      <a href="#">Gifts N Guitarist</a>
+    </div>  
+    <div class="dropdown-content6">
+      <h4>PRICE WISE GIFTS</h4>
+      <a href="#">Rs500-Rs1000</a>
+      <a href="#">Rs1000-Rs2000</a>
+      <a href="#">Above Rs2000</a>
+      <a href="#">Below RS200</a>
+    </div> 
+    <div class="dropdown-content7"><img src="Navigation-banner_Birthday-04-10-14.webp"></div>
+  </li>
+</ul>
+<ul>
+  <li class="dropdown2">
+    <a href="#" class="dropbtn2">ANNVERSARY</a>
+    <div class="dropdown-content8">
+      <h4>BY FEATURED</h4>
+      <a href="#">All Gifts</a>
+      <a href="#">Bestseller</a>
+      <a href="#">Zodiac Gifts</a>
+      <a href="#">Primium Gifts</a>
+      <a href="#">Unusual Gifts</a>
+      <a href="#">New arival</a>
+      <a href="#">Luxe Anniversary</a>
+     
+    </div>
+    <div class="dropdown-content9">
+      <h4>GIFT BY CHOICE</h4>
+      <a href="#">Cakes</a>
+      <a href="#">Flowers</a>
+      <a href="#">Personalised Gifts</a>
+      <a href="#">Chocolate</a>
+      <a href="#">Plants</a>
+      <a href="#">Flowers N Cake</a>
+      <a href="#">Combos</a>
+      <a href="#">Gifts Hampers</a>
+      <a href="#">Flowers N Chocolate</a>
+      <a href="#">Decoration Services</a>
+      <a href="#">Jewellery</a>
+      <a href="#">Expertential Gift</a>
+
+
+    </div>  
+    <div class="dropdown-content10">
+      <h4>Explore More</h4>
+      <a href="#">surprise N Decoration</a>
+      <a href="#">Gifts Hampers</a>
+      <a href="#">Photo frame</a>
+      <a href="#">Exotic Flowers</a>
+      <a href="#">Home Decor/a>
+      <a href="#">Home N living</a>
+      <a href="#">Cosmatic N Spa Hampers</a>
+      <a href="#">Gift Mall</a>
+    </div>  
+    <div class="dropdown-content11">
+      <h4>GIFT-BY RECEIPIENTS</h4>
+      <a href="#">For Husband</a>
+      <a href="#">For Wife</a>
+      <a href="#">For couples</a>
+      <a href="#">For Parents</a>
+      </div>  
+    <div class="dropdown-content12">
+      <h4>GIFT BY PRICE</h4>
+      <a href="#">Gift Rs500-Rs1000</a>
+      <a href="#">Gift Rs1000-Rs2000</a>
+      <a href="#">Gift Above Rs2000</a>
+    </div>  
+    <div class="dropdown-content13">
+     
+      <h4>GIFT FOR</h4>
+      <a href="#">1st Anniversary</a>
+      <a href="#">10th Anniversary</a>
+      <a href="#">25th Anniversary</a>
+      <a href="#">50th Anniversary</a>
+    
+    </div> 
+    <div class="dropdown-content14"><img src="Navigation-banner_Anniversary_feb.webp"></div>
+  </li>
+</ul>
+<ul>
+  <li class="dropdown3">
+    <a href="#" class="dropbtn3">WEDDING</a>
+    <div class="dropdown-content15">
+      <h4>FOREVER FAVOURITES</h4>
+      <a href="#">All Gifts</a>
+      <a href="#">Cakes</a>
+      <a href="#">Flowers</a>
+      <a href="#">Hampers</a>
+      <a href="#">Jewellery</a>
+      <a href="#">Personalised Gifts</a>
+      <a href="#">Primium Gifts</a>
+
+      
+    </div>
+    <div class="dropdown-content16">
+      <h4>ELEGANT FINDS</h4>
+      <a href="#">Accessories</a>
+      <a href="#">Pefumes</a>
+      <a href="#">Combos</a>
+      <a href="#">Home Decor</a>
+      <a href="#">Bar Accessories</a>
+      <a href="#">Wellness N Beauty Hampers</a>
+
+
+    </div>  
+    <div class="dropdown-content17">
+      <h4>BACHLOR PARTY LIFT</h4>
+      <a href="#">All Gifts</a>
+      <a href="#">For him</a>
+      <a href="#">For her</a>
+
+    </div>  
+    <div class="dropdown-content18">
+      <h4>GIFT FOR EVERYONE</h4>
+      <a href="#">Bride</a>
+      <a href="#">Groom</a>
+      <a href="#">Relatives&Freinds</a>
+      </div>  
+    <div class="dropdown-content19">
+      <h4>HEARTEFELT SAGAN OFFERINGS</h4>
+      <a href="#">Warm Wishes-upto 1100</a>
+      <a href="#">Thoughtfull Gesture-upto 2100</a>
+      <a href="#">Cherised contribution-upto 5100</a>
+      <a href="#">Celeberatory celebrations -upto 11000</a>
+    </div>  
+    
+    
+    </div> 
+    <div class="dropdown-content20"><img src="Luxe_Wedding_1_Navigation_banner-15-11.webp"></div>
+    <div class="dropdown-content21"><img src="Gift_Hampers_Wedding_2_Navigation_banner-15-11.webp"></div>
+    <div class="dropdown-content22"><img src="All_Wedding_Gifts_3_Navigation_banner-15-11.webp"></div>
+  </li>
+</ul>
+<ul>
+  <li class="dropdown4">
+    <a href="#" class="dropbtn4">CAKE</a>
+    <div class="dropdown-contentm">
+      <h4>Celebrate Special<br> Occasions</h4>
+      <a href="#">All cakes</a>
+      <a href="#">Birthday Cake</a><br>
+      <a href="#"> Anniversary Cakes</a><br>
+      <a href="#">Congratutlation</a><br>
+      <a href="#">25th Anniversary</a><br>
+      <a href="#">Kids Birthday</a><br>
+      <a href="#">Wedding Cakes</a><br>
+      <a href="#">1st Anniversary</a><br>
+      <a href="#">MAke small celebrations Big</a><br>
+      <a href="#">Explore Cake Collection</a><br>
+    </div>
+    <div class="dropdown-content24">
+      <h4>TOP PICKS</h4>
+]      <a href="#">Bestseller</a>
+      <a href="#">Same Day Delivery</a>
+      <a href="#">Midnight Delivery</a>
+      <a href="#">Luxe Cake</a>
+      <a href="#">Flowers N Cake</a>
+      <a href="#">Cake and Guitarist</a>
+      <a href="#">Cake combos</a>
+      <a href="#">Cake with Plants</a>
+      <a href="#">Cake With Chocolate</a>
+      <a href="#">New arival</a>
+    </div>  
+    <div class="dropdown-content25">
+      <h4>Yummy Treats      </h4>
+      <a href="#">gourmet Cakes</a>
+      <a href="#">eggless Cakes</a>
+      <a href="#">Cup cakes</a>
+      <a href="#">Dry Cakes</a>
+      <a href="#">Bento Cake</a>
+      <a href="#">Phtot Cake</a>
+      <a href="#">Fusion Cake</a>
+      <a href="#">Jar Cakes</a>
+      <a href="#">Designer Cake</a>
+      <a href="#">Fondant Cake</a>
+      <a href="#">Heart Cake</a>
+    </div>  
+    <div class="dropdown-content26">
+      <h4>FLAVOUR CHOICE</h4>
+      <a href="#">Butterscotch Cake </a>
+      <a href="#">Pineapple Cakes</a>
+      <a href="#">Truffle Cakes</a>
+      <a href="#">chocalate cakes</a>
+      <a href="#">Black forest cakes</a>
+      <a href="#">vanilla Cakes</a>
+      <a href="#">red Vellet Cake</a>
+      <a href="#">Blue Berry Cake</a>
+      <a href="#">Wallnet Cakes</a>
+      <a href="#">Cofee Cakes</a>
+      <a href="#">pinata Cakes</a>
+      <a href="#">Fresh Fruit Cakes</a>
+      <a href="#">Caramel Cake</a>
+
+    </div>  
+    <div class="dropdown-content27">
+      <h4> SEND CAKE TO</h4>
+      <a href="#">Delhi</a>
+      <a href="#">Mumbaie</a>
+      <a href="#">Bengleru</a>
+      <a href="#">Pune</a>
+      <a href="#">Hyderabad</a>
+      <a href="#">KolKata</a>
+    </div> 
+    <div class="dropdown-content28"><img src="Navigation-banner_Egless-Cakes-24-10-24.webp"></div>
+  </li>
+</ul>
+<ul>
+
+<div class="c2"><img src="Screenshot (3).png"></div>
+<div class="c4" ></div>
+<div class="c3"><p>Policy Info</p>
+   <br> <br>Terms & Conditions
+   <br><br> Privacy Policy
+ <br>   <br>Terms of Use
+  <br>  <br>Disclaimer</div>
+  <div class="c5"><p>About Company</p>
+    <br> <br>About Us
+    <br> <br>FNP Team
+    <br> <br> Careers
+    <br> <br>Testimonials
+    <br> <br>News Room</div>
+    <div class="c6  "><p>FNP business</p>
+        <br> <br>   Decoration Services
+        <br> <br> Corporate Service
+        <br> <br> Affiliate Program
+        <br> <br>  Retails Stores
+        <br> <br> Franchise</div>
+        <div class="c7  "><p>Need Help ?        </p>
+            <br> <br>   Contact us
+            <br> <br> FAQs
+            </div>
+            <div class="c8 "><p>Useful Links</p>
+                <br> <br> 
+                Quotes N Wishes                <br> <br> 
+                Flower Astrology                <br> <br> 
+                Article Hub                <br> <br> 
+                Care Guide                <br> <br> 
+                Blog</div>
+                <div class="c9" >SUBSCRIBE                </div>
+                <div class="c10" >SUBMIT</div>
+                <div class="c11" >Get updates on promotions and offers coupons.
+                </div>
+                <div class="c12" >Email</div>
+                <div class="d2"><img src="Screenshot (4).png"></div>
+                <div class="d1" >Company Name: FNP E Retail Private Limited | CIN: U52100HR2021PTC118882 | Regd. Office Address: Plot No. 75P, Sector-44, Gurgaon, Gurgaon Sector 45, Sector -45, Gurgaon- 122003, Haryana, India
+                 <br> Telephone No.: +91-11-26802680 | E-mail: help@fnp.com | Grievance Resolution Officer Name: Mr. Rahul Mamgain
+                  </div>
+<div class="Rest">FLOWERS PERSONALISED  PLANTS CHOCOLATW COMBOS LIFESTYLE OCCASIONS GLOBAL ON-TREND</div>
+
+<div class="c1"><h2>FNP: India's Best Gift Portal. Send Cakes, Gifts & Flowers Online</h2>FNP (Ferns N Petals) is India’s top gifting brand that helps you celebrate special moments by delivering fabulous gifts to your loved ones. You can find thoughtful gifts for all special days like Birthdays, Anniversaries, Valentine's day and<br> festivals like Rakshabandhan (Rakhi), Diwali and Christmas etc. Our range of gifts includes flower bouquets and yummy cakes which can be delivered to all major cities in under 2 hours. We can also deliver personalised gifts, potted <br>plants, chocolates, gift hampers, digital gifts etc.</div>
+</body>
+</html>
